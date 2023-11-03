@@ -1,0 +1,260 @@
+/* if you are using any Google fonts change the font names below to your fonts. 
+Any spaces in your font name should be replaced with a +. 
+Fonts are separated by a & */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,800&display=swap");
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #ffffff;
+  --secondary-color: #ded5cf;
+  --tertiary-color: #363636;
+  --accent1-color: #b8752b;
+  --accent2-color: #9aa293;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "Playfair Display";
+  --paragraph-font: "Montserrat";
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: var(
+    --tertiary-color
+  ); /* headlines on a white background */
+  --headline-color-on-color: var(
+    --tertiary-color
+  ); /* headlines on a colored background */
+  --paragraph-color-on-white: var(
+    --accent3-color
+  ); /* paragraph text on a white background */
+  --paragraph-color-on-color: --accent3-color; /* paragraph text on a colored background */
+  --paragraph-background-color: var(--accent1-color);
+  --nav-link-color: var(--tertiary-color);
+  --nav-background-color: var(--secondary-color);
+  --nav-hover-link-color: var(--accent1-color);
+  --nav-hover-background-color: var(--secondary-color);
+}
+
+/*  Look around below...but DON'T CHANGE ANYTHING! */
+
+body {
+  background-color: var(--secondary-color);
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 4em;
+  font-size: 18px;
+  text-align: center;
+}
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+}
+h2 {
+  text-align: center;
+  color: var(--tertiary-color);
+}
+
+h3 {
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+h4 {
+  text-align: center;
+  color: var(--accent2-color);
+}
+
+h5 {
+  text-align: center;
+  color: var(--tertiary-color);
+}
+
+hr {
+  height: 3px;
+  margin: 35px 0;
+  background: var(--accent1-color);
+}
+
+.paragraph-font {
+  font-family: "Montserrat", sans-serif;
+}
+.main-hr {
+  height: 3px;
+  margin: 35px 0;
+  background: var(--tertiary-color);
+}
+header {
+  padding: 1em;
+  text-align: center;
+  color: var(--headline-color-on-color);
+  background-color: var(--paragraph-background-color);
+}
+header > h1,
+header > h2 {
+  color: var(--headline-color-on-color);
+}
+p {
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color-on-white);
+  padding: 1em;
+}
+.colors {
+  width: 100%;
+  min-width: 350px;
+  margin: 30px auto;
+  text-align: center;
+}
+.colors th {
+  background-color: #999;
+}
+.colors td {
+  width: 25%;
+  height: 3em;
+}
+.primary {
+  background-color: var(--primary-color);
+}
+.secondary {
+  background-color: var(--secondary-color);
+}
+
+.tertiary {
+  background-color: var(--tertiary-color);
+}
+.accent1 {
+  background-color: var(--accent1-color);
+}
+.accent2 {
+  background-color: var(--accent2-color);
+}
+
+.accent3 {
+  background-color: var(--accent3-color);
+}
+
+p.colored {
+  background-color: var(--paragraph-background-color);
+  color: var(--paragraph-color-on-color);
+}
+nav {
+  background-color: var(--nav-background-color);
+  line-height: 3em;
+  text-align: center;
+  font-size: 1.2em;
+}
+nav {
+  list-style-type: none;
+  display: flex;
+}
+nav a {
+  font-family: "Montserrat", sans-serif;
+  padding: 1em;
+  min-width: 120px;
+  text-decoration: none;
+  padding: 10px;
+}
+nav a:link,
+nav a:visited {
+  color: var(--nav-link-color);
+}
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+.sitemap {
+  display: grid;
+  justify-content: center;
+
+  grid-template-columns: repeat(6, 15%);
+  grid-template-rows: 3em 1.5em 1.5em 3em;
+  grid-template-areas:
+    ". . home home . ."
+    ". . . top . ."
+    ". left left right right ."
+    "page2 page2 . . page3 page3";
+}
+.sitemap > div {
+  text-align: center;
+}
+.sm-home {
+  grid-area: home;
+  background-color: #ccc;
+  line-height: 3em;
+}
+.sm-page2 {
+  grid-area: page2;
+  background-color: #ccc;
+  line-height: 3em;
+}
+.sm-page3 {
+  grid-area: page3;
+  background-color: #ccc;
+  line-height: 3em;
+}
+.top {
+  grid-area: top;
+  border-left: 1px solid;
+}
+.left {
+  grid-area: left;
+  border-top: 1px solid;
+  border-left: 1px solid;
+}
+.right {
+  grid-area: right;
+  border-top: 1px solid;
+  border-right: 1px solid;
+}
+
+.book {
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
+  text-decoration: none;
+  padding: 15px 30px;
+  margin-top: 50px;
+  border-radius: 5px;
+}
+
+.book:hover {
+  background-color: var(--accent2-color);
+  color: var(--primary-color);
+}
+.p-img-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.p-img {
+  width: 30%;
+}
+
+.port-img {
+  width: 50%;
+}
+
+.service-img {
+  width: 10%;
+}
+
+.process-img {
+  width: 40%;
+}
+
+.media-icons-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.media-icons {
+  width: 10%;
+}

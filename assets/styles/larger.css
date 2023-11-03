@@ -1,7 +1,9 @@
 @media (min-width: 640px) {
   nav ul {
     display: flex;
+    justify-content: space-evenly;
   }
+
   nav ul li {
     flex: 1 1 100%;
   }
