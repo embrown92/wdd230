@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+:root {
+  --primary-color: white;
+  --secondary-color: #b47152;
+  --accent1-color: #b9b271;
+  --accent2-color: #355c5a;
+  --dark-color: black;
+
+  --heading-font: "Raleway";
+  --paragraph-font: "Lato";
+
+  /* headlines on a white background */
+  --headline-color-on-white: var(--secondary-color);
+
+  /* headlines on a colored background */
+  --headline-color-on-color: var(--primary-color);
+
+  /* paragraph text on a white background */
+  --paragraph-color-on-white: var(--dark-color);
+
+  /* paragraph text on a colored background */
+  --paragraph-color-on-color: var(--primary-color);
+  --paragraph-background-color: var(--accent1-color);
+  --nav-link-color: var(--primary-color);
+  --nav-background-color: var(--accent2-color);
+  --nav-hover-link-color: var(--secondary-color);
+  --nav-hover-background-color: var(--accent1-color);
+}
+
+body {
+  background-color: var(--primary-color);
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 4em;
+  font-size: 18px;
+  text-align: center;
+}
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+}
+
+p {
+  font-family: var(--paragraph-font);
+}
+
+.paragraph-font {
+  font-family: var(--paragraph-font);
+}
+
+h1 {
+  text-align: center;
+  color: var(--accent2-color);
+}
+
+h2 {
+  text-align: center;
+  color: var(--tertiary-color);
+}
+
+h3 {
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+h4 {
+  text-align: center;
+  color: var(--accent2-color);
+}
+
+h5 {
+  text-align: center;
+  color: var(--tertiary-color);
+}
+
+ul li {
+  text-align: left;
+  font-family: var(--paragraph-font);
+}
+
+hr {
+  height: 3px;
+  margin: 35px 0;
+  background: var(--accent1-color);
+}
+
+.paragraph-font {
+  font-family: var(--paragraph-font);
+}
+.main-hr {
+  height: 3px;
+  margin: 35px 0;
+  background: var(--tertiary-color);
+}
+header {
+  padding: 1em;
+  text-align: center;
+  color: var(--headline-color-on-color);
+  background-color: var(--paragraph-background-color);
+}
+header > h1,
+header > h2 {
+  color: var(--headline-color-on-color);
+}
+p {
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color-on-white);
+  padding: 1em;
+}
+.colors {
+  width: 100%;
+  min-width: 350px;
+  margin: 30px auto;
+  text-align: center;
+}
+.colors th {
+  background-color: #999;
+}
+.colors td {
+  width: 25%;
+  height: 3em;
+}
+.primary {
+  background-color: var(--primary-color);
+  border: 1px solid black;
+}
+.secondary {
+  background-color: var(--secondary-color);
+}
+
+.accent1 {
+  background-color: var(--accent1-color);
+}
+.accent2 {
+  background-color: var(--accent2-color);
+}
+
+p.colored {
+  background-color: var(--paragraph-background-color);
+  color: var(--paragraph-color-on-color);
+}
+nav {
+  background-color: var(--nav-background-color);
+  line-height: 3em;
+  text-align: center;
+  font-size: 1.2em;
+}
+nav {
+  list-style-type: none;
+  display: flex;
+}
+nav a {
+  font-family: var(--heading-font);
+  padding: 1em;
+  min-width: 120px;
+  text-decoration: none;
+  padding: 10px;
+}
+nav a:link,
+nav a:visited {
+  color: var(--nav-link-color);
+}
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
