@@ -78,6 +78,80 @@ nav a:hover {
 .open li {
   display: block;
 }
+
+/*===== Hamburger Mebu Style =====*/
+
+#ham-menu {
+  font-size: 1.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 3px 7px 6px;
+  background-color: #eee;
+  color: #000;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+#ham-menu::before {
+  content: "☰";
+}
+
+#ham-menu.open::before {
+  content: "❎";
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  background-color: #333;
+  color: #fff;
+}
+.navigation li {
+  display: none;
+}
+.navigation li a {
+  display: block;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+}
+.navigation li a:hover {
+  background-color: #bbb;
+  color: #333;
+  font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
+.open li {
+  display: block;
+  width: 100%;
+}
+.open li a {
+  display: block;
+}
+
+.active::before {
+  content: "💚 ";
+}
+
+/* large view navigation ************************************/
+@media (min-width: 37.5em) {
+  #ham-menu {
+    display: none; /* hide hamburger button */
+  }
+
+  .navigation {
+    flex-direction: row;
+  }
+
+  .navigation li {
+    display: block;
+    flex: 1 1 100%;
+  }
+}
+
 /*===== Main Style =====*/
 
 #main {
@@ -145,10 +219,19 @@ section ul {
   list-style-type: none;
 }
 
+/*===== Dark Mode =====*/
+#mode {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 3rem;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
 /*===== Footer Style =====*/
 footer {
   background-color: var(--third-color);
-  color: b;
   padding: 15px;
   text-align: center;
   width: 100%;
