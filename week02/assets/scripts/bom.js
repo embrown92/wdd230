@@ -16,8 +16,6 @@ button.addEventListener('click', () => {
             list.removeChild(li);
             input.focus();
             input.value = '';
-
         });
-
     }
 });
