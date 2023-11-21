@@ -17,6 +17,14 @@
     grid-gap: 1vh;
   }
 
+  .hero-label {
+    padding: 1.5rem;
+  }
+
+  .hero-label p {
+    font-size: 2rem;
+  }
+
   .title {
     font-size: 1.5rem;
     text-align: left;

@@ -1,7 +1,7 @@
 /*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 /* Universal Selector */
 * {
   margin: 0;
@@ -152,8 +152,42 @@ nav a:hover {
   }
 }
 
-/*===== Main Style =====*/
+/*===== Hero Style =====*/
 
+.hero-img {
+  position: relative;
+  width: 100%;
+  margin: auto;
+}
+
+.hero-img picture img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.hero-label {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  background: radial-gradient(#fff, #a4aac5);
+  border: 1px solid rgba(0, 0, 0, 0.75);
+  padding: 1rem;
+  box-shadow: 0 0 3rem #fff;
+  opacity: 0.5;
+  border-radius: 12px;
+  /* Buenas */
+}
+
+.hero-label p {
+  margin: 0;
+  padding: 0.25rem;
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: "Great Vibes", serif;
+}
+
+/*===== Main Style =====*/
 #main {
   width: auto;
   margin: auto;
@@ -161,7 +195,7 @@ nav a:hover {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: minmax(7vh, auto) minmax(7vh, auto) minmax(7vh, auto);
   grid-gap: 20px;
-  padding: 50px;
+  padding: 30px;
 }
 
 h1,
@@ -227,6 +261,25 @@ section ul {
   list-style-type: none;
 }
 
+.num-of-visits p,
+.card div p {
+  text-align: center;
+  padding: 10px;
+}
+
+.visits {
+  font-size: 2rem;
+}
+
+/*===== Area Map =====*/
+.area-map iframe {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  align-items: center;
+  padding: 20px;
+}
+
 /*===== Dark Mode =====*/
 #mode {
   position: absolute;
@@ -245,4 +298,9 @@ footer {
   width: 100%;
   position: fixed;
   bottom: 0;
+}
+
+footer p {
+  font-size: smaller;
+  padding: 5px;
 }

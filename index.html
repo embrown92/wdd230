@@ -45,8 +45,24 @@
         </ul>
     </nav><!--Navigation Section Ends-->
 
+    <!--hero Section Start-->
+    <div class="hero-img">
+        <picture>
+            <source media="(max-width: 500px )" alt="small hero image" srcset="./assets/images/hero-small.webp">
+            <source media="(max-width: 1000px )" alt="medium hero image" srcset="./assets/images/hero-medium.webp">
+            <img src="./assets/images/hero-large.webp" alt="large hero image" width="1500" height="750">
+        </picture>
+        <div class="hero-label">
+            <p>Fort Lauderdate Temple</p>
+        </div>
+    </div>
+
+
     <!--Main Section Start-->
     <main id="main">
+
+
+
         <h2 class="title">
             WDD 230: Web Frontend Development
         </h2>
@@ -77,7 +93,7 @@
                         <li><a href="./week03/landscape.webp">🔸 Convert image to Webp</a></li>
                         <li><a href="./week03/lazyload.html">🔸 Lazy Loading Demonstration</a></li>
                         <li><a href="./week03/responsive-images.html">🔸 Responsive Images</a></li>
-
+                        <li><a href="./week03/bom.html">🔸 Web Storage API - localStorage</a></li>
                     </ul>
                 </li>
 
@@ -93,19 +109,46 @@
             <div class="card-header">
                 <h3>Information</h3>
             </div>
+
+            <div>
+                <p>
+                    Weather information here:
+
+                </p>
+            </div>
+
+
+
+
+
+
+            <div class="num-of-visits">
+                <p><span class="label">Number of <br> Page Visits: <br>
+                    </span><span class="visits"></span></p>
+            </div>
         </section>
+
     </main><!--Main Section Ends-->
+
+    <section class="area-map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3583.8620678744987!2d-80.35840115331861!3d26.07076384432429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9a747e6849fa1%3A0xb7896a822f8ed4c8!2sFort%20Lauderdale%20Florida%20Temple!5e0!3m2!1sen!2sus!4v1700608728125!5m2!1sen!2sus"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
 
     <!--Footer Section Start-->
     <footer>
         <p>&copy; <span id="year"></span> | 🌸 Eda Mae Brown 🌸 | Florida - USA 🇺🇸 </p>
         <p id="lastModified"></p>
+
     </footer><!--Footer Section Ends-->
 
     <!--Script File Link-->
     <script src="./assets/scripts/getDates.js"></script>
     <script src="./assets/scripts/darkmode.js"></script>
     <script src="./assets/scripts/hamburger-menu.js"></script>
+    <script src="./assets/scripts/numOfVisits.js"></script>
 
 </body>
 
