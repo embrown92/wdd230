@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images</title>
+    <link rel="stylesheet" href="./assets/styles/responsive-image.css">
+</head>
+
+<body>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 500px )" alt="small hero image" srcset="./assets/images/hero-small.webp">
+                <source media="(max-width: 1000px )" alt="medium hero image" srcset="./assets/images/hero-medium.webp">
+                <img src="./assets/images/hero-large.webp" alt="large hero image" width="1500" height="750">
+            </picture>
+        </div>
+    </main>
+
+
+</body>
+
+</html>
