@@ -4,55 +4,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/styles/form.css">
+    <title>Student Sign Up Form</title>
+    <meta name="author" content="Eda Mae Brown">
+    <meta name="description" content="Fill Me In">
+    <link href="./assets/styles/form-normalize.css" rel="stylesheet">
+    <link href="./assets/styles/form-base.css" rel="stylesheet">
+    <link href="./assets/styles/form-larger.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
+        <h1>Student Sign Up Form
+        </h1>
     </header>
-    <nav>
 
+    <nav class="clearfix">
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Academics</a></li>
+            <li><a href="#">Admission</a></li>
+
+        </ul>
     </nav>
-    <h1>Student Sign Up Form</h1>
-    <form method="get">
-        <p class="smaller">*️⃣ Indicates a required field</p>
 
-        <label for="fullname" class="req">Username</label>
-        <input type="text" id="username" name="username" required placeholder="Please enter your username">
+    <main>
+        <form method="get" action="record.html">
+            <p class="smaller">*️⃣ Indicates a required field</p>
+            <fieldset>
+                <legend>Student Information</legend>
 
-        <label for="password1" class="req">Password</label>
-        <input type="password" id="password1" name="password1" required placeholder="Please enter your password"
-            pattern=".{8,}" title="Eight or more characters">
+                <label class="top">Username *️⃣
+                    <input type="text" id="username" name="username" required>
+                </label>
 
-        <label for="password2" class="req">Re-enter Password</label>
-        <input type="password" id="password2" name="password2" required placeholder="Please re-enter your password"
-            pattern=".{8,}" title="Eight or more characters">
+                <label for="password1" class="top">Password *️⃣
+                    <input type="password" id="password1" name="password1" required pattern=".{8,}"
+                        title="Eight or more characters">
+                </label>
 
-        <label for="email" class="req">Email Address</label>
-        <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" required
-            placeholder="Please use your school email address">
+                <label for="password2" class="top">Re-enter Password *️⃣
+                    <input type="password" id="password2" name="password2" required pattern=".{8,}"
+                        title="Eight or more characters">
+                </label>
 
-        <label for="r">Rate page between 1 - 10:</label>
-        <input type="range" id="range" name="range" min="1" max="10" value="0" step="1" list="rangevalues">
-        <datalist id="rangevalues">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">1</option>
-            <option value="7">2</option>
-            <option value="8">3</option>
-            <option value="9">4</option>
-            <option value="10">5</option>
-        </datalist>
+                <label class="top">Email Address *️⃣
+                    <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" required
+                        placeholder="someone@byui.edu" title="Please enter a valid email address">
+                </label>
+            </fieldset>
 
+            <fieldset>
+                <legend>Application Process Rating</legend>
+                <label class="sbs">Rate page between 1 - 10:
+                    <input type="range" id="range" name="range" min="1" max="10" value="0" step="1" list="rangevalues">
+                    <datalist id="rangevalues">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">1</option>
+                        <option value="7">2</option>
+                        <option value="8">3</option>
+                        <option value="9">4</option>
+                        <option value="10">5</option>
+                    </datalist>
+                </label>
+            </fieldset>
 
-        <button id="btnSubmit" type="submit">Submit</button>
-        <input type="hidden" value="43aster">
-    </form>
-    <footer></footer>
+            <input type="submit" value="Sign Up" class="submitBtn">
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; &bull;<span id="year"></span> &bull;| Eda Mae Brown | 123-555-6789 </p>
+        <p id="lastModified"></p>
+
+    </footer>
+    <script src="./assets/scripts/form-script.js"></script>
+    <script src="./assets/scripts/getDates.js"></script>
+
 </body>
 
 </html>

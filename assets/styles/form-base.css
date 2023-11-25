@@ -1,0 +1,165 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #022136;
+  --secondary-color: #29648a;
+  --tertiary-color: #444;
+  --light-color: rgb(232, 232, 232);
+  --dark-color: #000;
+}
+
+/*----------- BODY --------------*/
+body {
+  font-size: 16px;
+  font-family: Verdana, sans-serif;
+}
+
+/*----------- HEADER --------------*/
+header {
+  padding: 0.5rem 2%;
+  background-color: var(--primary-color);
+}
+header h1 {
+  color: var(--light-color);
+  margin: 0;
+}
+header h2 {
+  margin: 0;
+  font-weight: normal;
+}
+
+/*----------- NAVIGATION --------------*/
+nav {
+  background-color: var(--tertiary-color);
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+nav ul li {
+  float: left;
+  width: 25%;
+}
+nav ul li a {
+  display: block;
+  background-color: var(--tertiary-color);
+  color: var(--light-color);
+  border-left: 1px solid #777;
+  padding: 0.5rem 0;
+  text-decoration: none;
+  font-size: 0.9rem;
+  text-align: center;
+}
+nav ul li:first-child a {
+  border-left: none;
+}
+
+nav ul li a:hover {
+  background-color: var(--light-color);
+  color: #333;
+}
+
+/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
+.open li {
+  display: block;
+  width: 100%;
+}
+.open li a {
+  display: block;
+}
+
+.active::before {
+  background-color: var(--dark-color);
+  color: var(--secondary-color);
+}
+/*----------- MAIN --------------*/
+main {
+  padding: 0 2%;
+  min-height: 20rem;
+}
+
+/*----------- FORM -------------*/
+form fieldset {
+  margin: 2rem 0;
+  border: 1px solid var(--secondary-color);
+  border-radius: 10px;
+  padding: 0.5rem 2%;
+}
+
+form legend {
+  color: var(--primary-color);
+  margin: 0 1rem;
+  padding: 0 0.5rem;
+}
+
+form label.top,
+form div {
+  display: block;
+  padding-top: 1rem;
+  color: var(--primary-color);
+  font-size: 0.8rem;
+}
+
+form label.top input,
+form label.top select {
+  -webkit-appearance: none;
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #999;
+  border-radius: 4px;
+  padding: 0.75rem;
+  color: #555;
+  max-width: 20rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+form label.sbs {
+  display: block;
+  padding: 0.75rem 0;
+  color: #555;
+}
+
+form input.submitBtn {
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  border-radius: 1rem;
+  padding: 0.75rem 1.5rem;
+  margin: 0 0 2rem 2%;
+  width: 96%;
+  max-width: 20rem;
+}
+
+form label.top input:required {
+  border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+  border-left: green solid 6px;
+}
+
+/*----------- FOOTER --------------*/
+footer {
+  background-color: #ddd;
+  padding: 0.5rem 2%;
+  text-align: center;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
