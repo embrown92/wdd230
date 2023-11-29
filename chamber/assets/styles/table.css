@@ -1,6 +1,6 @@
 :root {
-  --back: hsl(83, 39%, 20%);
-  --back2: hsla(126, 15%, 60%, 1);
+  --back: hsla(150, 50%, 30%, 1);
+  --back2: hsla(150, 50%, 30%, 0.5);
   --foredark: hsla(0, 0%, 10%, 1);
   --forelight: hsla(0, 0%, 100%, 1);
   --border: hsla(0, 0%, 20%, 0.8);
@@ -14,8 +14,6 @@ body {
 }
 
 table {
-  display: block;
-  width: 100%;
   margin: 10px auto;
   border: thin solid var(--border);
   box-shadow: 0 0 10px var(--shadow);
@@ -42,7 +40,7 @@ td {
 }
 
 th {
-  background-color: var(--back);
+  background-color: var(--back2);
   font-size: larger;
 }
 
@@ -52,4 +50,8 @@ td {
 
 tbody tr:nth-child(odd) {
   background-color: var(--zebra);
+}
+
+.benefits {
+  text-align: left;
 }

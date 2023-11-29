@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
 html {
   -webkit-text-size-adjust: 100%;
@@ -162,4 +164,19 @@ footer {
   content: "";
   display: table;
   clear: both;
+}
+
+.thank {
+  margin: 0;
+  padding: 0.25rem;
+  font-weight: 700;
+  font-size: 5rem;
+  font-family: "Great Vibes", serif;
+}
+
+.thank-msg p {
+  padding: 100px;
+  width: 80%;
+  text-align: center;
+  font-size: 1rem;
 }
