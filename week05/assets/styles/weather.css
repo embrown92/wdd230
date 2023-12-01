@@ -1,0 +1,56 @@
+body {
+  display: block;
+}
+
+h1 {
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  width: 280px;
+  height: 300px;
+  margin: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  background-color: #f2f2f2;
+  box-shadow: 0 0 30px #bcbdbd;
+}
+
+section p {
+  text-align: center;
+  padding: 10px;
+}
+span {
+  color: navy;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 20px;
+}
+
+figure img {
+  display: block;
+  margin: 0 auto;
+  width: auto;
+}
+
+figure figcaption {
+  color: navy;
+  font-weight: bold;
+  text-align: center;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  display: inline-flex;
+  justify-content: center;
+}

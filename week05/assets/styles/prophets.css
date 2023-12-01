@@ -1,0 +1,45 @@
+h1 {
+  color: navy;
+  font-size: 2.5rem;
+  font-style: italic;
+  text-align: center;
+}
+
+#cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+#cards section {
+  height: auto;
+  margin: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#cards h2 {
+  color: navy;
+  font-size: 1.5rem;
+  font-style: italic;
+  padding: 0;
+}
+
+#cards h3 {
+  color: black;
+  font-size: 1rem;
+}
+
+#cards img {
+  width: 250px;
+  height: auto;
+  box-shadow: 0 0 30px #777;
+  margin: 0.5rem;
+}

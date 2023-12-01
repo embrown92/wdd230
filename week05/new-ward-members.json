@@ -1,0 +1,34 @@
+{
+    "famName" : "White",
+    "movedIn" : "January 2020",
+    "numOfPeople" : 5,
+    "visitedByBishopric" : true,
+    "active" : true,
+    "members" : [
+      {
+        "name" : "Marco",
+        "birthDate" : "April 21, 1980",
+        "gender" : "male"
+      },
+      {
+        "name" : "Lilia",
+        "birth" : "December 4, 1986",
+        "gender" : "female"
+      },
+      {
+        "name" : "Jason",
+        "birth" : "March 1, 2010",
+        "gender" : "male"
+      },
+      {
+        "name" : "Marie",
+        "birth" : "July 4, 2013",
+        "gender" : "female"
+      },
+      {
+        "name" : "Kyle",
+        "birth" : "October 12, 2016",
+        "gender" : "male"
+      }
+    ]
+  }

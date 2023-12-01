@@ -1,0 +1,94 @@
+{
+    "weeks": [
+        {
+            "week": "Week 1",
+            "links": [
+                {
+                    "url": "week01/chamber-site-plan.html",
+                    "title": "Chamber Site Plan"
+                }
+            ]
+        
+        },
+        {
+            "week": "Week 2",
+            "links": [
+                {
+                    "url": "week02/design.html",
+                    "title": "Design"
+                },
+                {
+                    "url": "https://codepen.io/edamame2000/pen/RwvVLrg",
+                    "title": "Hamburger Menu"
+                },{
+                    "url": "week02/bom.html",
+                    "title": "DOM Manipulation"
+                }
+            ]
+        },
+        {
+            "week": "Week 3",
+            "links": [
+                {
+                    "url": "week03/landscape.webp",
+                    "title": "Webp"
+                },
+                {
+                    "url": "week03/lazyload.html",
+                    "title": "Lazy Loading"
+                },
+                {
+                    "url": "week03/responsive-images.html",
+                    "title": "Responsive Images"
+                },
+                {
+                    "url": "week03/bom.html",
+                    "title": "localStorage"
+                }
+            ]
+        },
+        {
+            "week": "Week 4",
+            "links": [
+                {
+                    "url": "https://codepen.io/edamame2000/pen/YzBvpwV",
+                    "title": "CSS Pseudo-Classes"
+                },
+                {
+                    "url": "week04/assets/images/combinator.png",
+                    "title": "CSS Combinators"
+                },
+                {
+                    "url": "week04/tablebuild.html",
+                    "title": "HTML Tables"
+                },
+                {
+                    "url": "week04/form-practice.html",
+                    "title": "HTML FORM"
+                }
+                
+            ]
+        },
+        {
+            "week": "Week 5",
+            "links": [
+                {
+                    "url": "https://codepen.io/edamame2000/pen/QWYVzjj?editors=1100",
+                    "title": "CSS Pseudo-elements"
+                }, {
+                    "url": "week05/new-ward-members.json",
+                    "title": "JSON"
+                },
+                {
+                    "url": "week05/prophets.html",
+                    "title": "Fetch API"
+                },
+                {
+                    "url": "week05/weather.html",
+                    "title": "Weather API"
+                }  
+            ]
+        }
+
+    ]
+}

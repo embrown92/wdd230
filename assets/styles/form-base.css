@@ -177,3 +177,27 @@ footer {
   text-align: center;
   font-size: 1rem;
 }
+
+/*-----Weather Style Start-------------*/
+.weather p {
+  text-align: center;
+  padding: 10px;
+}
+.weather p span {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 20px;
+}
+
+.weather figure img {
+  display: block;
+  margin: 0 auto;
+  width: auto;
+}
+
+.weather figure figcaption {
+  color: navy;
+  font-weight: bold;
+  text-align: center;
+}

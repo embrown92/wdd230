@@ -304,3 +304,39 @@ footer p {
   font-size: smaller;
   padding: 5px;
 }
+
+/*-----Weather Style Start-------------*/
+.weather p {
+  text-align: center;
+  padding: 10px;
+}
+.weather p span {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 20px;
+}
+
+.weather figure img {
+  display: block;
+  margin: 0 auto;
+  width: auto;
+}
+
+.weather figure figcaption {
+  color: var(--dark-color);
+  font-weight: bold;
+  text-align: center;
+}
+
+.weather,
+.num-of-visits {
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 100%;
+  height: auto;
+}
+
+.num-of-visits {
+  border-radius: 0 0 15px 15px;
+}
