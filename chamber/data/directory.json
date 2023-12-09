@@ -1,11 +1,11 @@
 {
-    "directory": [
+    "prophets": [
         {
             "name": "Adjectives Market",
             "address": "137 W Plant St, Winter Garden, FL 34787",
-            "phonenumber": "321-422-2710",
+            "phone": "321-422-2710",
             "website": "https://www.adjstyle.com/",
-            "imageurl": "https://www.dropbox.com/scl/fi/xdvcezljddzou63mdkkur/adjective.webp?rlkey=xb73qb9e57z6ojded6x90ah18&dl=0"
+            "image": "https://www.dropbox.com/scl/fi/xdvcezljddzou63mdkkur/adjective.webp?rlkey=xb73qb9e57z6ojded6x90ah18&dl=0"
         },
         {
             "name": "Driftwood Market",

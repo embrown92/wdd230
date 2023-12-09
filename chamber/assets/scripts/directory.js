@@ -3,53 +3,41 @@ const url = 'https://embrown92.github.io/wdd230/chamber/data/directory.json';
 
 const cards = document.querySelector('#cards');
 
-async function getBusinessDirectory() {
+async function getDirectory() {
     const response = await fetch(url);
     const data = await response.json();
-    console.log(data);
+    // console.table(data.prophets);
 
-    displayDirectory(data.infos);
+    displayDirectory(data.prophets);
 };
 
-const displayDirectory = (infos) => {
-    infos.forEach((info) => {
+const displayDirectory = (members) => {
+    members.forEach((member) => {
         let card = document.createElement('section');
-        let buzName = document.createElement('h2');
-        let buzAdd = document.createElement('h4');
-        let buzPhone = document.createElement('h4');
-        let buzImage = document.createElement('img');
-        let button = document.createElement('button');
+        let name = document.createElement('h2');
+        let address = document.createElement('h4');
+        let phone = document.createElement('h4');
+        let image = document.createElement('img');
 
-        // const buzUrlArray = info.website;
+        name.innerHTML = `${member.name}`;
+        address.innerHTML = `${member.address}`;
+        phone.innerHTML = `${member.phonenumber}`;
 
-        // buzUrlArray.forEach((link) => {
-        //     const buzUrl = document.createElement('a');
-        //     buzUrl.setAttribute('href', `${link.website}`);
-        //     buzUrl.setAttribute('target', '_blank');
-        //     buzUrl.textContent = `Visit Website`;
-        //     button.appendChild(buzUrlArray);
-        // })
+        image.setAttribute('src', member.imageurl);
+        image.setAttribute('alt', `Image of ${member.name}`);
+        image.setAttribute('loading', 'lazy');
+        image.setAttribute('width', '450');
+        image.setAttribute('height', '450');
 
-        buzName.textContent = `${info.name}`;
-        buzAdd.textContent = `${info.address}`;
-        buzPhone.textContent = `${info.phonenumber}`;
-
-        buzImage.setAttribute('src', info.imageurl);
-        buzImage.setAttribute('alt', `Image from ${info.name}`);
-        buzImage.setAttribute('loading', 'lazy');
-        buzImage.setAttribute('width', '450');
-        buzImage.setAttribute('height', '450');
-
-        card.appendChild(buzImage);
-        card.appendChild(buzName);
-        card.appendChild(buzAdd);
-        card.appendChild(buzPhone);
-        card.appendChild(button);
+        card.appendChild(image);
+        card.appendChild(name);
+        card.appendChild(address);
+        card.appendChild(phone);
 
         cards.appendChild(card);
     });
 };
 
-getBusinessDirectory();
+getDirectory();
 
 
