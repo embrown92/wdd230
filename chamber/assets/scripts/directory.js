@@ -7,6 +7,7 @@ const cards = document.querySelector('#cards');
 async function getDirectory() {
     const response = await fetch(URL);
     const data = await response.json();
+    console.log(data);
     displayDirectory(data.members);
 };
 
@@ -18,49 +19,50 @@ const displayDirectory = (members) => {
         let businessName = document.createElement('h3');
         businessName.textContent = `${member.name}`;
 
-        let businessIcon = document.createElement('img');
-        businessIcon.setAttribute('loading', 'lazy');
-        member.icon.forEach((item) => {
-            businessIcon.setAttribute('src', item.source);
-            businessIcon.setAttribute('alt', item.altName);
-            businessIcon.setAttribute('width', item.width);
-            businessIcon.setAttribute('height', item.height);
-            businessIcon.setAttribute('loading', "lazy");
+        let imageInfoArray = member.icon;
+        let businessImage = document.createElement('img');
+        businessImage.setAttribute('loading', 'lazy');
+        imageInfoArray.forEach((image) => {
+            businessImage.setAttribute('src', image.source);
+            businessImage.setAttribute('alt', image.altName);
+            businessImage.setAttribute('width', image.width);
+            businessImage.setAttribute('height', image.height);
+            businessImage.setAttribute('loading', "lazy");
         });
 
-
+        let addressArray = member.address;
         let businessAdd = document.createElement('p');
-        businessAdd.setAttribute('id', 'addressLine');
-        member.address.forEach((info) => {
-            street.innerHTML = `${info.street}, <br>${info.city}, ${info.state} ${info.zipcode}`;
+        addressArray.forEach((info) => {
+            businessAdd.innerHTML = `${info.street}, <br>${info.city}, ${info.state} ${info.zipcode}`;
         });
 
         let phoneNum = document.createElement('p');
-        phoneNum.setAttribute('id', 'phoneNum')
         phoneNum.textContent = `${member.phone}`;
 
-        let website = document.createElement('a');
-        website.setAttribute('href', member.url);
-        website.setAttribute('target', "_blank");
-        website.textContent = member.url;
-
+        let websiteButton = document.createElement('button');
+        let websiteArray = member.url;
+        websiteArray.forEach((link) => {
+            let websiteURL = document.createElement('a');
+            websiteURL.setAttribute('href', member.url);
+            websiteURL.setAttribute('target', "_blank");
+            websiteURL.textContent = member.url;
+        });
 
         let memberLevel = document.createElement('p');
         memberLevel.textContent = `Member Level: ${member.memberLevel}`;
-
 
         card.appendChild(businessName);
         card.appendChild(businessIcon);
         card.appendChild(businessAdd);
         card.appendChild(phoneNum);
-        card.appendChild(website);
+        card.appendChild(websiteButton);
         card.appendChild(memeberLevel);
 
         cards.appendChild(card);
     });
 };
 
-// program buttons to be toggled between list and grid.  Grid is default.
+// program buttons to be toggled between list and grid
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
 
