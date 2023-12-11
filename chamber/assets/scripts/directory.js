@@ -1,74 +1,60 @@
 
 const baseURL = 'https://embrown92.github.io/wdd230/chamber/data/directory.html';
-const membersURL = 'https://embrown92.github.io/wdd230/chamber/data/directory.json';
+const URL = 'https://embrown92.github.io/wdd230/chamber/data/directory.json';
 
 const cards = document.querySelector('#cards');
 
-// fecth members data
-async function getMembers() {
-    const response = await fetch(membersURL);
+async function getDirectory() {
+    const response = await fetch(URL);
     const data = await response.json();
-    console.log(data);
-    displayMembers(data.members);
+    displayDirectory(data.members);
 };
 
-const displayMembers = (members) => {
-    this.members.forEach((member) => {
-        // Create elements to add to the div.cards element
+const displayDirectory = (members) => {
+    members.forEach((member) => {
+
         let card = document.createElement('section');
-        card.setAttribute('class', 'dircard');
 
-        // creat business name header
-        let busName = document.createElement('h3');
-        busName.setAttribute('class', 'direct');
-        busName.textContent = `${member.name}`;
+        let businessName = document.createElement('h3');
+        businessName.textContent = `${member.name}`;
 
-        // create image element
-        let busIcon = document.createElement('img');
-        busIcon.setAttribute('loading', 'lazy');
+        let businessIcon = document.createElement('img');
+        businessIcon.setAttribute('loading', 'lazy');
         member.icon.forEach((item) => {
-            busIcon.setAttribute('src', item.source);
-            busIcon.setAttribute('alt', item.altName);
-            busIcon.setAttribute('width', item.width);
-            busIcon.setAttribute('height', item.height);
-            busIcon.setAttribute('loading', "lazy");
+            businessIcon.setAttribute('src', item.source);
+            businessIcon.setAttribute('alt', item.altName);
+            businessIcon.setAttribute('width', item.width);
+            businessIcon.setAttribute('height', item.height);
+            businessIcon.setAttribute('loading', "lazy");
         });
 
 
-        // loop through to address to make address line
-        let street = document.createElement('p');
-        street.setAttribute('class', 'direct');
-        street.setAttribute('id', 'addressLine');
+        let businessAdd = document.createElement('p');
+        businessAdd.setAttribute('id', 'addressLine');
         member.address.forEach((info) => {
             street.innerHTML = `${info.street}, <br>${info.city}, ${info.state} ${info.zipcode}`;
         });
 
-        // create phone number
         let phoneNum = document.createElement('p');
-        phoneNum.setAttribute('class', 'direct');
         phoneNum.setAttribute('id', 'phoneNum')
         phoneNum.textContent = `${member.phone}`;
 
-        // create website element
         let website = document.createElement('a');
-        website.setAttribute('class', 'direct');
         website.setAttribute('href', member.url);
         website.setAttribute('target', "_blank");
         website.textContent = member.url;
 
 
-        // create member level
-        let memLevel = document.createElement('p');
-        memLevel.setAttribute('class', 'direct');
-        memLevel.textContent = `Member Level: ${member.memLevel}`;
+        let memberLevel = document.createElement('p');
+        memberLevel.textContent = `Member Level: ${member.memberLevel}`;
 
-        // Append the section(card) with the created elements
-        card.appendChild(busName);
-        card.appendChild(busIcon);
-        card.appendChild(street);
+
+        card.appendChild(businessName);
+        card.appendChild(businessIcon);
+        card.appendChild(businessAdd);
         card.appendChild(phoneNum);
         card.appendChild(website);
-        card.appendChild(memLevel);
+        card.appendChild(memeberLevel);
 
         cards.appendChild(card);
     });
@@ -88,6 +74,6 @@ gridbutton.addEventListener("click", () => {
     cards.classList.remove("list");
 });
 
-// activate the fetch to get member data
-getMembers();
+
+getDirectory();
 
