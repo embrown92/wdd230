@@ -49,7 +49,7 @@ const displayDirectory = (members) => {
         });
 
         let memberLevel = document.createElement('p');
-        memberLevel.textContent = `Member Level: ${member.memberLevel}`;
+        memberLevel.textContent = `Member Level: ${member.memLevel}`;
 
         card.appendChild(businessName);
         card.appendChild(businessIcon);
