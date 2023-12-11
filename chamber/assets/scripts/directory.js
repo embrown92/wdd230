@@ -5,10 +5,18 @@ const URL = 'https://embrown92.github.io/wdd230/chamber/data/directory.json';
 const cards = document.querySelector('#cards');
 
 async function getDirectory() {
-    const response = await fetch(URL);
-    const data = await response.json();
-    console.log(data);
-    displayDirectory(data.members);
+    try {
+        const response = await fetch(URL);
+        if (response.ok) {
+            const data = await response.json();
+            console.log(data);
+            displayDirectory(data.members);
+        } else {
+            throw Error(await response.text());
+        }
+    } catch (error) {
+        console.log(error);
+    }
 };
 
 const displayDirectory = (members) => {
@@ -31,24 +39,23 @@ const displayDirectory = (members) => {
         });
 
         let addressArray = member.address;
-        let businessAdd = document.createElement('p');
+        let businessAdd = document.createElement('h4');
         addressArray.forEach((info) => {
             businessAdd.innerHTML = `${info.street}, <br>${info.city}, ${info.state} ${info.zipcode}`;
         });
 
-        let phoneNum = document.createElement('p');
+        let phoneNum = document.createElement('h4');
         phoneNum.textContent = `${member.phone}`;
 
-        let websiteButton = document.createElement('button');
         let websiteArray = member.url;
+        let websiteButton = document.createElement('button');
         websiteArray.forEach((link) => {
             let websiteURL = document.createElement('a');
-            websiteURL.setAttribute('href', member.url);
+            websiteURL.setAttribute('href', link.url);
             websiteURL.setAttribute('target', "_blank");
-            websiteURL.textContent = member.url;
         });
 
-        let memberLevel = document.createElement('p');
+        let memberLevel = document.createElement('h4');
         memberLevel.textContent = `Member Level: ${member.memLevel}`;
 
         card.appendChild(businessName);
@@ -56,7 +63,7 @@ const displayDirectory = (members) => {
         card.appendChild(businessAdd);
         card.appendChild(phoneNum);
         card.appendChild(websiteButton);
-        card.appendChild(memeberLevel);
+        card.appendChild(memberLevel);
 
         cards.appendChild(card);
     });
