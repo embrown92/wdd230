@@ -1,43 +1,93 @@
-const baseURL = 'https://embrown92.github.io/wdd230/';
-const url = 'https://embrown92.github.io/wdd230/chamber/data/directory.json';
+
+const baseURL = 'https://embrown92.github.io/wdd230/chamber/data/directory.html';
+const membersURL = 'https://embrown92.github.io/wdd230/chamber/data/directory.json';
 
 const cards = document.querySelector('#cards');
 
-async function getDirectory() {
-    const response = await fetch(url);
+// fecth members data
+async function getMembers() {
+    const response = await fetch(membersURL);
     const data = await response.json();
-    // console.table(data.prophets);
-
-    displayDirectory(data.prophets);
+    console.log(data);
+    displayMembers(data.members);
 };
 
-const displayDirectory = (members) => {
-    members.forEach((member) => {
+const displayMembers = (members) => {
+    this.members.forEach((member) => {
+        // Create elements to add to the div.cards element
         let card = document.createElement('section');
-        let name = document.createElement('h2');
-        let address = document.createElement('h4');
-        let phone = document.createElement('h4');
-        let image = document.createElement('img');
+        card.setAttribute('class', 'dircard');
 
-        name.innerHTML = `${member.name}`;
-        address.innerHTML = `${member.address}`;
-        phone.innerHTML = `${member.phonenumber}`;
+        // creat business name header
+        let busName = document.createElement('h3');
+        busName.setAttribute('class', 'direct');
+        busName.textContent = `${member.name}`;
 
-        image.setAttribute('src', member.imageurl);
-        image.setAttribute('alt', `Image of ${member.name}`);
-        image.setAttribute('loading', 'lazy');
-        image.setAttribute('width', '450');
-        image.setAttribute('height', '450');
+        // create image element
+        let busIcon = document.createElement('img');
+        busIcon.setAttribute('loading', 'lazy');
+        member.icon.forEach((item) => {
+            busIcon.setAttribute('src', item.source);
+            busIcon.setAttribute('alt', item.altName);
+            busIcon.setAttribute('width', item.width);
+            busIcon.setAttribute('height', item.height);
+            busIcon.setAttribute('loading', "lazy");
+        });
 
-        card.appendChild(image);
-        card.appendChild(name);
-        card.appendChild(address);
-        card.appendChild(phone);
+
+        // loop through to address to make address line
+        let street = document.createElement('p');
+        street.setAttribute('class', 'direct');
+        street.setAttribute('id', 'addressLine');
+        member.address.forEach((info) => {
+            street.innerHTML = `${info.street}, <br>${info.city}, ${info.state} ${info.zipcode}`;
+        });
+
+        // create phone number
+        let phoneNum = document.createElement('p');
+        phoneNum.setAttribute('class', 'direct');
+        phoneNum.setAttribute('id', 'phoneNum')
+        phoneNum.textContent = `${member.phone}`;
+
+        // create website element
+        let website = document.createElement('a');
+        website.setAttribute('class', 'direct');
+        website.setAttribute('href', member.url);
+        website.setAttribute('target', "_blank");
+        website.textContent = member.url;
+
+
+        // create member level
+        let memLevel = document.createElement('p');
+        memLevel.setAttribute('class', 'direct');
+        memLevel.textContent = `Member Level: ${member.memLevel}`;
+
+        // Append the section(card) with the created elements
+        card.appendChild(busName);
+        card.appendChild(busIcon);
+        card.appendChild(street);
+        card.appendChild(phoneNum);
+        card.appendChild(website);
+        card.appendChild(memLevel);
 
         cards.appendChild(card);
     });
 };
 
-getDirectory();
+// program buttons to be toggled between list and grid.  Grid is default.
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
 
+cards.classList.add("grid");
+
+listbutton.addEventListener("click", () => {
+    cards.classList.toggle("list");
+});
+
+gridbutton.addEventListener("click", () => {
+    cards.classList.remove("list");
+});
+
+// activate the fetch to get member data
+getMembers();
 

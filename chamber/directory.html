@@ -24,6 +24,10 @@
 
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+
+    <link rel="stylesheet" href="./assets/styles/form-base.css">
+    <link rel="stylesheet" href="./assets/styles/form-larger.css">
+
     <!--Title-->
     <title>The City of Winter Garden Chamber of Commerce Mockup</title>
 </head>
@@ -58,19 +62,86 @@
         </ul>
     </nav>
 
+    <!-- Switch Buttons for Grid and List Modes -->
     <!-- Main Section -->
-    <main class="join-grid">
+    <main class="join-grid" id="directory">
         <div class="join-about">
             <h1>
-                Business Directory
+                The City of Winter Garden <br>
+                ~ Chamber of Commerce ~ <br>
+                Members Directory
             </h1>
 
             <hr>
             <hr>
         </div>
 
-        <div id="cards"></div>
+        <article class="join-article">
+            <div class="switch">
+                <button id="grid"><img src="./assets/images/grid-icon.webp" alt="Grid Icon" width="50"
+                        height="50"></button>
+                <button id="list"><img src="./assets/images/list-icon.webp" alt="List Icon" width="50"
+                        height="50"></button>
+            </div>
 
+            <!-- Member Directory Display Info -->
+            <div id="cards">
+                <!-- Member Card info inserted with members.js file and members.json data -->
+            </div>
+
+
+        </article>
+
+        <aside class="join-form-sidebar-left">
+            <h2>JOIN THE CHAMBER</h2>
+
+            <form method="get" action="thankyou.html">
+
+                <fieldset>
+                    <legend>Main Applicant Information</legend>
+                    <label class="top">First Name <span class="required">*</span><input class="fill-in" type="text"
+                            name="fname" required></label>
+                    <label class="top">Last Name <span class="required">*</span><input class="fill-in" type="text"
+                            name="lname" required></label>
+                    <label class="top">Title or Position <span class="required">*</span><input class="fill-in"
+                            type="text" name="title" required></label>
+                    <label class="top">Email <span class="required">*</span><input class="fill-in" type="email"
+                            name="email" placeholder="someone@gmail.com" required></label>
+                    <label class="top">Phone <span class="required">*</span><input class="fill-in" type="tel"
+                            name="phone" placeholder="1235551234" required></label>
+                    <label class="top">Business/Organization <span class="required">*</span><input class="fill-in"
+                            type="text" name="bname" required></label>
+
+                    <label class="top">Website<input class="fill-in" type="url" name="url"
+                            placeholder="http://"></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Chamber Membership</legend>
+                    <div>Levels</div>
+                    <label class="sbs"><input type="radio" name="audience" value="beginner"> Bronze Membership -
+                        $750</label>
+                    <label class="sbs"><input type="radio" name="audience" value="beginner"> Silver Membership -
+                        $1500</label>
+                    <label class="sbs"><input type="radio" name="audience" value="beginner"> Gold Membership -
+                        $3000</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Business/Organization's Description</legend>
+
+                    <label class="top">Describe your
+                        business/organization here...</label>
+                    <textarea name="description" id="description" cols="30" rows="10"></textarea>
+                    <input class="today" type="hidden" name="timeStamp" id="timeStamp" />
+                </fieldset>
+
+                <input type="submit" value="Join the Chamber" class="submitBtn">
+
+            </form>
+
+
+        </aside>
     </main>
 
     <!-- "reach out" section -->
@@ -133,7 +204,7 @@
     <script src="./assets/scripts/getDates.js"></script>
     <script src="./assets/scripts/numOfVisits.js"></script>
     <script src="./assets/scripts/timestamp.js"></script>
-    <script src="./assets/scripts/directory2.js"></script>
+    <script src="./assets/scripts/directory.js"></script>
 
 
 </body>

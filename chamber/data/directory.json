@@ -1,88 +1,280 @@
 {
-    "prophets": [
+    "members": [
         {
             "name": "Adjectives Market",
-            "address": "137 W Plant St, Winter Garden, FL 34787",
+            "address": [
+                {
+                    "street": "137 W Plant St",
+                    "city": "Winter Garden",
+                    "state": "FL",
+                    "zipcode": " 34787"
+                }
+            ],
             "phone": "321-422-2710",
-            "website": "https://www.adjstyle.com/",
-            "image": "https://www.dropbox.com/scl/fi/xdvcezljddzou63mdkkur/adjective.webp?rlkey=xb73qb9e57z6ojded6x90ah18&dl=0"
+            "url": "https://www.adjstyle.com/",
+            "memLevel": "Silver",
+            "about": "A marketplace with treasure troves of carefully curated boutique galleries provided by an eclectic community of artisans and home décor experts. An inspirational adventure of discovering unique hand painted and refinished furniture and home décor, vintage designer handbags and fashion, one-of-a-kind gifts, handcrafted jewelry, historic memorabilia, and so much more. Specialty classes to make your own creations also offered.",
+            "icon": [
+                {
+                    "source": "images/directory-photos/adjective.webp",
+                    "altName": "Adjectives Market image",
+                    "width": 450,
+                    "height": 450
+                }
+            ]
         },
         {
             "name": "Driftwood Market",
-            "address": "46 W Plant St, Winter Garden, FL 34787",
-            "phonenumber": "407-554-3105",
-            "website": "https://driftwoodmarket.net/",
-            "imageurl": "https://www.dropbox.com/scl/fi/5rt9vmbqocsy0e9cyb5lm/driftwood.webp?rlkey=nizld8if15iv9oaapofzgbecr&dl=0"
+            "address": [
+                {
+                    "street": "46 W Plant St",
+                    "city": "Winter Garden",
+                    "state": "FL",
+                    "zipcode": " 34787"
+                }
+            ],
+            "phone": "407-554-3105",
+            "url": "https://driftwoodmarket.net/",
+            "memLevel": "Silver",
+            "about": "Driftwood Market offers a hand curated collection of unique gifts, garden goods, accessories and home décor selected for quality and value, in addition to DIY artisan workshops. With pride, they procure distinct Items, both locally and internationally, to offer supreme collections of apparel, baby and kids’ items, home furnishings and decorations, candles, jewelry, gourmet goods, pet products, stationary, and more for their customers.",
+            "icon": [
+                {
+                    "source": "images/directory-photos/driftwood.webp",
+                    "altName": "Driftwood Market image",
+                    "width": 450,
+                    "height": 450
+                }
+            ]
         },
         {
-            "name": "Gatorlillys",
-            "address": "2 E Plant St, Winter Garden, FL 34787",
-            "phonenumber": "407-395-9967",
-            "website": "http://www.gatorlillys.com/",
-            "imageurl": "https://www.dropbox.com/scl/fi/0v0vo0ivx8717zd2tsjlk/gatorlilly.webp?rlkey=6g61pclvywvsv3qqf5d0kjz24&dl=0"
+            "name": "Gatorlilly's",
+            "address": [
+                {
+                    "street": "2 E Plant St",
+                    "city": "Winter Garden",
+                    "state": "FL",
+                    "zipcode": " 34787"
+                }
+            ],
+            "phone": "407-395-9967",
+            "url": "http://www.gatorlillys.com/",
+            "memLevel": "Silver",
+            "about": "Gatorlillys is an upscale resale women’s boutique boasting the largest selection of new with tags and pre-loved Lilly Pulitzer in Florida. The shop offers a pristine selection of Lilly Pulitzer apparel and accessories for any occasion.",
+            "icon": [
+                {
+                    "source": "images/directory-photos/gatorlilly.webp",
+                    "altName": "Gatorlilly's image",
+                    "width": 450,
+                    "height": 450
+                }
+            ]
         },
         {
             "name": "SOBO Art Gallery",
-            "address": "127 S Boyd St, Winter Garden, FL 34787",
-            "phonenumber": "407-347-7996",
-            "website": "https://wgart.org/",
-            "imageurl": "https://www.dropbox.com/scl/fi/yfjd20x58tqv8j7p6dple/sobo.webp?rlkey=imw23nhra6xpbheswatbcifr4&dl=0"
+            "address": [
+                {
+                    "street": "127 S Boyd St",
+                    "city": "Winter Garden",
+                    "state": "FL",
+                    "zipcode": " 34787"
+                }
+            ],
+            "phone": "407-347-7996",
+            "url": "https://wgart.org/",
+            "memLevel": "Gold",
+            "about": "The SOBO Art Gallery is a Historic Winter Garden landmark and was actually the first Fire Station in our town. Over the years this building has been preserved and is now home to the Art Gallery whose goal is to expand public access to art. The facility provides space to educate, explore, experience, and celebrate the many aspects of visual art and culture.",
+            "icon": [
+                {
+                    "source": "images/directory-photos/sobo.webp",
+                    "altName": "SOBO Art Gallery image",
+                    "width": 450,
+                    "height": 450
+                }
+            ]
         },
         {
             "name": "Garden Theatre",
-            "address": "160 W Plant St, Winter Garden, FL 34787",
-            "phonenumber": "407-877-4736",
-            "website": "https://www.gardentheatre.org/",
-            "imageurl": "https://www.dropbox.com/scl/fi/7qphfdma7e0g0ve8vea9f/theater.webp?rlkey=ucsdrjw8c7o097cs4mgfjxo85&dl=0"
+            "address": [
+                {
+                    "street": "160 W Plant St",
+                    "city": "Winter Garden",
+                    "state": "FL",
+                    "zipcode": " 34787"
+                }
+            ],
+            "phone": "407-877-4736",
+            "url": "https://www.gardentheatre.org/",
+            "memLevel": "Gold",
+            "about": "The Garden Theatre functions as the premier performing arts center in West Orange County, hosting more than 200 events a season/year, including professional-level theatre, dance, music, and films. Constructed in 1935 in the Mediterranean Revival style, the interior of the Garden Theatre was modeled after a Spanish courtyard with Romeo and Juliet balconies, a Spanish tile roof, and a dark blue ceiling resplendent with stars.",
+            "icon": [
+                {
+                    "source": "images/directory-photos/theater.webp",
+                    "altName": "Garden Theatre image",
+                    "width": 450,
+                    "height": 450
+                }
+            ]
         },
         {
             "name": "Southern Home Bakery",
-            "address": "6 E Plant St, Winter Garden, FL 34787",
-            "phonenumber": "407-347-8349",
-            "website": "https://www.southernhomebakery.com/",
-            "imageurl": "https://www.dropbox.com/scl/fi/hmd628308q0rxw133670i/bakery.webp?rlkey=zblys0qc8xl94gv22jqckmok3&dl=0"
+            "address": [
+                {
+                    "street": "6 E Plant St",
+                    "city": "Winter Garden",
+                    "state": "FL",
+                    "zipcode": " 34787"
+                }
+            ],
+            "phone": "407-347-8349",
+            "url": "https://www.southernhomebakery.com/",
+            "memLevel": "Silver",
+            "about": "Southern Home Bakery creates custom, decorated sugar cookies and classic southern desserts. The made-from-scratch desserts are perfect to make any day special, as well as a private party or corporate event. Themed Cookie Carton monthly subscription delivers southern hospitality right to a doorstep!",
+            "icon": [
+                {
+                    "source": "images/directory-photos/bakery.webp",
+                    "altName": "Southern Home Bakery image",
+                    "width": 450,
+                    "height": 450
+                }
+            ]
         },
         {
             "name": "Way Chocolate & Coffee",
-            "address": "50 W Plant St, Winter Garden, FL 34787",
-            "phonenumber": "407-614-5043",
-            "website": "http://www.waychocolate.com/",
-            "imageurl": "https://www.dropbox.com/scl/fi/ksfv7tzzrwburnj8ly396/chocolate.webp?rlkey=meaofctqgcxh94rf1woa6q1ob&dl=0"
+            "address": [
+                {
+                    "street": "50 W Plant St",
+                    "city": "Winter Garden",
+                    "state": "FL",
+                    "zipcode": " 34787"
+                }
+            ],
+            "phone": "407-614-5043",
+            "url": "http://www.waychocolate.com/",
+            "memLevel": "Silver",
+            "about": "Irresistible handcrafted chocolates, crepes, pastries, cakes, gelato, milkshakes, coffee, and assorted beverages. Delicacies made with love, passion, and your way.",
+            "icon": [
+                {
+                    "source": "images/directory-photos/chocolate.webp",
+                    "altName": "Way Chocolate & Coffee image",
+                    "width": 450,
+                    "height": 450
+                }
+            ]
         },
         {
             "name": "The Attic Door",
-            "address": "28 W Plant St, Winter Garden, FL 34787",
-            "phonenumber": "407-877-0266",
-            "website": "https://www.theatticdoorlive.com/",
-            "imageurl": "https://www.dropbox.com/scl/fi/6wony4u77k21aatbglc4x/atticpng.webp?rlkey=b1jx0zzinoeh5y7uy3c7u15oi&dl=0"
+            "address": [
+                {
+                    "street": "28 W Plant St",
+                    "city": "Winter Garden",
+                    "state": "FL",
+                    "zipcode": " 34787"
+                }
+            ],
+            "phone": "407-877-0266",
+            "url": "https://www.theatticdoorlive.com/",
+            "memLevel": "Silver",
+            "about": "At night, enjoy the swanky little wine bar with live music; and on weekends, enjoy one of the best Afternoon Tea Room experiences offered in the city. Dinner menu includes small and dinner plates, appetizers, soups, salads, sandwiches, desserts as well as extensive wine and beer list. Traditional Afternoon Tea service features tiered plate stands filled with fresh-baked scones and house clotted cream, finger sandwiches, savories, desserts, and premium loose leaf tea.",
+            "icon": [
+                {
+                    "source": "images/directory-photos/attic.webp",
+                    "altName": "The Attic Door image",
+                    "width": 450,
+                    "height": 450
+                }
+            ]
         },
         {
             "name": "Market To Table",
-            "address": "146 W Plant St, Winter Garden, FL 34787",
-            "phonenumber": "407-395-9871",
-            "website": "https://www.market2table.com/",
-            "imageurl": "https://www.dropbox.com/scl/fi/0j1rfn36k0cg0y597wi26/market.webp?rlkey=8nadi89krxjgiphcisahsdwza&dl=0"
+            "address": [
+                {
+                    "street": "146 W Plant St",
+                    "city": "Winter Garden",
+                    "state": "FL",
+                    "zipcode": " 34787"
+                }
+            ],
+            "phone": "407-395-9871",
+            "url": "https://www.market2table.com/",
+            "memLevel": "Silver",
+            "about": "Market to Table creates modern American cuisine with seasonal influences. Their menu offers a mix of traditional, yet elevated, contemporary dishes. Featuring locally handcrafted products in its gourmet creations, options include gourmet appetizers, salads, entrees and desserts.",
+            "icon": [
+                {
+                    "source": "images/directory-photos/market.webp",
+                    "altName": "Market To Table image",
+                    "width": 450,
+                    "height": 450
+                }
+            ]
         },
         {
             "name": "Urban on Plant Kitchen & Bar",
-            "address": "132 W Plant St, Winter Garden, FL 34787",
-            "phonenumber": "407-614-2765",
-            "website": "http://urbanflats-wintergarden.com/",
-            "imageurl": "https://www.dropbox.com/scl/fi/6va4woxvyo1x2g40e74i6/urban.webp?rlkey=2sc4im0vimmatk2kkeys8fmux&dl=0"
+            "address": [
+                {
+                    "street": "132 W Plant St",
+                    "city": "Winter Garden",
+                    "state": "FL",
+                    "zipcode": " 34787"
+                }
+            ],
+            "phone": "407-614-2765",
+            "url": "http://urbanflats-wintergarden.com/",
+            "memLevel": "Silver",
+            "about": "Chic restaurant and bar with seasonal menu of creative versions of American cuisine prepared daily with the freshest ingredients. Menu includes appetizers, soups, salads, sandwiches, burgers, and popular selection of crafted flatbreads. Dessert offerings include a chocolate fondue to share.",
+            "icon": [
+                {
+                    "source": "images/directory-photos/urban.webp",
+                    "altName": "Urban on Plant Kitchen & Bar image",
+                    "width": 450,
+                    "height": 450
+                }
+            ]
         },
         {
             "name": "Garden Music School",
-            "address": "40 S Main St, Winter Garden, FL 34787",
-            "phonenumber": "407-654-5277",
-            "website": "http://www.gardenmusiconline.com/",
-            "imageurl": "https://www.dropbox.com/scl/fi/pw3x8ihre9ystdffvsl6b/music.webp?rlkey=26z33eq6ahmo3meff4urqmgz8&dl=0"
+            "address": [
+                {
+                    "street": "40 S Main St",
+                    "city": "Winter Garden",
+                    "state": "FL",
+                    "zipcode": " 34787"
+                }
+            ],
+            "phone": "407-654-5277",
+            "url": "http://www.gardenmusiconline.com/",
+            "memLevel": "Silver",
+            "about": "Garden Music is a state-of-the-art music academy, retail store, production studio. The retail store sells instruments and accessories while the school offers private and group music classes for all ages and levels. Recording studios, rehearsal rooms, and instruments available to rent.",
+            "icon": [
+                {
+                    "source": "images/directory-photos/music.webp",
+                    "altName": "Garden Music School image",
+                    "width": 450,
+                    "height": 450
+                }
+            ]
         },
         {
             "name": "Writer’s Block Bookstore",
-            "address": "32 W Plant St, Winter Garden, FL 34787",
-            "phonenumber": "407-335-4192",
-            "website": "https://www.writersblockbookstore.com/",
-            "imageurl": "https://www.dropbox.com/scl/fi/ax97qyv7797cs19s3fhut/bookstore.webp?rlkey=qgovgdgmph9znqlp59xy948mv&dl=0"
+            "address": [
+                {
+                    "street": "32 W Plant St",
+                    "city": "Winter Garden",
+                    "state": "FL",
+                    "zipcode": " 34787"
+                }
+            ],
+            "phone": "407-335-4192",
+            "url": "https://www.writersblockbookstore.com/",
+            "memLevel": "Silver",
+            "about": "Central Florida’s full-service independent community bookstore specializes in new books of all genres, as well as old favorites, best-sellers, and Indie Next Picks, in addition to gift items! The cozy and quaint bookstore also hosts events, book clubs, and loyalty clubs.",
+            "icon": [
+                {
+                    "source": "images/directory-photos/bookstore.webp",
+                    "altName": "Writer’s Block Bookstore",
+                    "width": 450,
+                    "height": 450
+                }
+            ]
         }
     ]
 }
