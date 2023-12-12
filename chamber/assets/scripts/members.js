@@ -17,7 +17,7 @@ const displayMembers = (members) => {
         card.setAttribute('class', 'dircard');
 
         // creat business name header
-        let busName = document.createElement('h3');
+        let busName = document.createElement('h2');
         busName.setAttribute('class', 'direct');
         busName.textContent = `${member.name}`;
 
@@ -38,11 +38,11 @@ const displayMembers = (members) => {
         street.setAttribute('class', 'direct');
         street.setAttribute('id', 'addressLine');
         member.address.forEach((part) => {
-            street.innerHTML = `${part.street}, ${part.suite} <br>${part.city}, ${part.state} ${part.zipcode}`;
+            street.innerHTML = `${part.street},${part.city}, ${part.state} ${part.zipcode}`;
         });
 
         // create phone number
-        let phoneNum = document.createElement('p');
+        let phoneNum = document.createElement('h3');
         phoneNum.setAttribute('class', 'direct');
         phoneNum.setAttribute('id', 'phoneNum')
         phoneNum.textContent = `${member.phoneNumber}`;
@@ -56,7 +56,7 @@ const displayMembers = (members) => {
 
 
         // create member level
-        let memLevel = document.createElement('p');
+        let memLevel = document.createElement('h3');
         memLevel.setAttribute('class', 'direct');
         memLevel.textContent = `Member Level: ${member.memLevel}`;
 

@@ -1055,114 +1055,92 @@ footer a {
 }
 
 /*---------  Directory Style -----------*/
-h1 {
-  color: navy;
-  font-size: 2.5rem;
-  font-style: italic;
+
+#cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+  padding: 50px;
+}
+
+.menu {
+  margin: 1rem auto;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+  background-color: #bed;
   text-align: center;
 }
 
-#cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-gap: 0.5rem;
-  align-items: center;
-  margin-bottom: 3rem;
+.menu button {
+  padding: 1rem;
+  font-weight: 700;
 }
 
-#cards section {
-  height: auto;
-  margin: 0.5rem;
+section {
   border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 1rem;
+  padding: 0.5rem;
   background-color: #eee;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 5px;
+  align-items: center;
+}
+
+.grid section {
+  width: 350px;
+  height: 500px;
+  margin: 0.5rem;
+  box-shadow: 0 0 20px #cccccc;
+  padding: 1rem;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  border-radius: 10px;
 }
 
-#cards h2 {
-  color: navy;
-  font-size: 1.5rem;
-  font-style: italic;
-  padding: 0;
-}
-
-#cards h3 {
-  color: black;
-  font-size: 1rem;
-}
-
-#cards img {
+.grid img {
   width: 250px;
   height: 250px;
-  box-shadow: 0 0 30px #777;
   margin: 0.5rem;
+  border-radius: 10px;
+  padding: 20px;
 }
 
-#grid,
-#list {
-  margin: 1rem auto;
-  border: 3px ridge #293132;
-  background-color: #50d8d7;
-  text-align: center;
-  padding: 0.3%;
+.grid section > * {
+  margin: 0.1rem;
 }
 
-.switch img {
-  width: auto;
-  max-height: 45px;
-}
-
-#grid:hover,
-#list:hover {
-  box-shadow: 0 3px 6px 0 rgba(79, 81, 101, 0.5),
-    0 3px 12px 0 rgba(80, 216, 215, 0.5);
-}
-
-#directory h2 {
-  margin-bottom: 0;
-}
-
-.direct {
-  padding: 3%;
-}
-
-/* #addressLine {
-    padding-bottom: 4%;
-}*/
-
-#phoneNum {
-  padding-top: 4%;
-}
-
-.grid section a {
-  letter-spacing: 1.1pt;
-}
-
-.grid section h3 {
-  display: none;
+.grid h3 {
+  color: black;
+  font-size: 1rem;
+  padding: 10px;
 }
 
 .list {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
-.list .dircard {
+.list section {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  text-align: left;
-  justify-items: left;
-  min-height: 40px;
-  width: 80%;
-}
-
-.list section h3 {
-  display: block;
+  grid-template-columns: 2fr 1fr 1fr;
+  margin: 0;
+  padding: 0.25rem;
+  width: 100%;
+  height: 100px;
+  margin: 0.5rem;
+  box-shadow: 0;
+  padding: 0;
 }
 
 .list section > * {
@@ -1170,13 +1148,36 @@ h1 {
 }
 
 .list section img {
-  display: none;
+  display: none; /* smaller viewports only */
 }
 
-.list section a {
-  letter-spacing: 0.1pt;
+.list section h3 {
+  font-size: 1rem;
+  font-family: Roboto, Helvetica, sans-serif;
 }
 
 .list section:nth-child(even) {
-  background-color: #50d8d7;
+  background-color: #bed;
+}
+
+section h3 {
+  font-size: 1.5rem;
+}
+
+section p {
+  font-weight: 600;
+  font-size: smaller;
+}
+
+section a {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 0.85rem;
+  color: navy;
+  letter-spacing: 1.1pt;
+  text-decoration: none;
+}
+
+img {
+  height: 75px;
+  max-width: 100%; /* Images are jerks - Seattle*/
 }
