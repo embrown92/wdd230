@@ -1097,7 +1097,7 @@ h1 {
 
 #cards img {
   width: 250px;
-  height: auto;
+  height: 250px;
   box-shadow: 0 0 30px #777;
   margin: 0.5rem;
 }
@@ -1136,14 +1136,6 @@ h1 {
 
 #phoneNum {
   padding-top: 4%;
-}
-
-.grid img {
-  background-color: white;
-  box-shadow: 0 3px 6px 0 rgba(79, 81, 101, 0.3),
-    0 3px 12px 0 rgba(80, 216, 215, 0.3);
-  max-height: 60px;
-  width: auto;
 }
 
 .grid section a {
