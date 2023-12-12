@@ -1078,6 +1078,7 @@ h1 {
   background-color: #eee;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
@@ -1135,39 +1136,6 @@ h1 {
 
 #phoneNum {
   padding-top: 4%;
-}
-
-.dircard {
-  border: 3px ridge #293132;
-  padding: 2%;
-  color: #383336;
-  background-color: white;
-  box-shadow: 0 3px 6px 0 rgba(79, 81, 101, 0.5),
-    0 3px 12px 0 rgba(80, 216, 215, 0.5);
-}
-
-.dircard a {
-  color: #383336;
-}
-
-.dircard a:hover {
-  color: whitesmoke;
-  background-color: #547aa5;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-gap: 0.2%;
-  align-items: center;
-}
-
-.grid .dircard {
-  display: grid;
-  grid-template-rows: 1fr 20px 20px 30px 15px;
-  min-height: 220px;
-  align-items: center;
-  justify-items: center;
 }
 
 .grid img {
