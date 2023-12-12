@@ -1,0 +1,32 @@
+@media (min-width: 640px) {
+  nav ul {
+    display: flex;
+  }
+  nav ul li {
+    flex: 1 1 100%;
+  }
+
+  #main {
+    width: 100%;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows:
+      minmax(7vh, auto) minmax(30vh, auto) minmax(30vh, auto) minmax(30vh, auto)
+      minmax(7vh, auto);
+    grid-gap: 1vh;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+
+  .card.left {
+    grid-column: 1/8;
+    grid-row: 2/5;
+  }
+
+  .card.right {
+    grid-column: 8/13;
+    grid-row: 2/5;
+  }
+}
