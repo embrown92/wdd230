@@ -76,16 +76,20 @@
         </section>
 
         <!-- Weather section -->
-        <section class="weather">
-            <div>
-                <p>
-                    The current temperature in Winter Garden, Florida, USA is <br><br>
-                    <span id="current-temp"></span>
-                </p>
-                <figure>
-                    <img id="weather-icon" scr="" alt="">
-                    <figcaption></figcaption>
-                </figure>
+        <!-- weather section -->
+        <section id="weather" class="card">
+            <h3>Local Weather</h3>
+            <div id="weather-divs">
+                <!-- current weather -->
+                <div id="today">
+                    <h4>Today:</h4>
+                    <h5>Current Temp: <span id="current-temp"></span></h5>
+                    <h5>Conditions: <span class="current-cond"></span></h5>
+                </div>
+                <!-- forecast weather -->
+                <div id="forecast-container">
+                    <!-- contents inserted by weather.js file -->
+                </div>
             </div>
         </section>
 
@@ -483,7 +487,7 @@
     <script src="./assets/scripts/getDates.js"></script>
     <script src="./assets/scripts/numOfVisits.js"></script>
     <script src="./assets/scripts/timestamp.js"></script>
-    <script src="./assets/scripts/weather.js"></script>
+    <script src="./assets/scripts/weather2.js"></script>
     <script src="./assets/scripts/banner.js"></script>
     <script src="./assets/scripts/spotlight.js"></script>
 

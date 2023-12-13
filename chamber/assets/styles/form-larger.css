@@ -1,9 +1,5 @@
-/* 64em is also 1028px (if basefont is 16px) */
 @media only screen and (min-width: 45em) {
-  /*----------- MAIN --------------*/
   form label.sbs {
     padding: 0.4rem 0;
   }
-
-  /*----------- FOOTER --------------*/
-} /* end of media query */
+}

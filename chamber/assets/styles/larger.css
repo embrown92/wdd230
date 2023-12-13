@@ -304,21 +304,55 @@ nav a:hover {
 }
 
 /*-- Weather Style Start --*/
-.weather {
-  padding: 50px;
+#weather {
+  position: relative;
+  color: #000;
+  display: block;
   text-align: center;
-  background-color: var(--secondary-color);
-  color: #fff;
-}
-
-.weather div p span {
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-.weather div figure img {
   height: auto;
-  width: auto;
+  padding: 20px;
+}
+
+#weather h3 {
+  position: relative;
+  text-align: center;
+  font-size: 2rem;
+}
+
+#weather-divs div {
+  display: inline-block;
+}
+.current-cond {
+  text-transform: capitalize;
+}
+
+div#today {
+  width: 250px;
+  margin-top: 15px;
+  padding: 30px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+}
+
+div#forecast-container {
+  padding: 20px;
+  margin: 20px;
+}
+
+div.forcast-day {
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+}
+
+img#weather-icon,
+img#forecast-icon {
+  background-color: rgb(121, 222, 188);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+  padding: auto;
+  margin: 10px;
 }
 /*-- Weather Style End --*/
 
