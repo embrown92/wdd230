@@ -48,7 +48,6 @@ input.fill-in {
 form label.top,
 form div {
   display: block;
-  padding-top: 1rem;
   color: var(--secondary-color);
   font-size: 1rem;
 }

@@ -1,5 +1,6 @@
 const baseURL = "https://embrown92.github.io/wdd230/chamber/data/directory.html";
 const membersURL = "https://embrown92.github.io/wdd230/chamber/data/directory.json";
+
 const cards = document.querySelector("#cards");
 
 // fecth members data
